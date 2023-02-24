@@ -1,0 +1,56 @@
+<meta charset="utp-8">
+
+<br>
+
+<h1>Numeros pares</h1>
+
+<br>
+
+<script>
+
+	function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    var numero=1
+    var contador=1
+    var par=2
+
+    while(contador<=100){
+        if(numero == par) {
+            imprimir(numero);
+            numero++
+            contador++
+            par=par+2
+        }else{
+            numero++
+            contador++   
+        }
+    }
+
+</script>
+
+<meta charset="UTF-8">
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var contador = 2;
+    while(contador <= 100) {
+        imprimir(contador);
+        contador = contador + 2; // incrementar de dos en dos
+    }
+    imprimir("FIN");
+</script>

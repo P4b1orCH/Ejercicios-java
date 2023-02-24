@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+//Ejercicio 2.6.0 respuesta
+//Cambia el código para que el usuario tenga 3 intentos de inicio de sesión. Atención: si lo hace bien en el primer intento, no tiene sentido seguir preguntando por su nombre de usuario y contraseña.
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+    var iis=3; //intentos de inicio de sesion
+    var contador=1; 
+
+    while(contador <= iis){ 
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        if(inicioDeSesionIngresado==inicioDeSesionRegistrado && contrasenhaIngresada==contrasenhaRegistrada){
+            alert('bienvenido ' + inicioDeSesionRegistrado)
+            break;
+        }
+        else{
+            alert('El nombre de usuario y/o la contraseña esta equivocada')
+        }
+        contador++
+        }
+//document.write(inicioDeSesionRegistrado)
+//document.write('<br>')
+//document.write(contrasenhaRegistrada)
+</script>
+
+
